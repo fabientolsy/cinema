@@ -1,0 +1,234 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Verdana sans-serif;
+  box-sizing: border-box;
+}
+
+/*image de background fixe
+body {
+  background-image: url("review.jpg")  no-repeat center/ cover ;
+}
+*/
+
+.header {
+  background: linear-gradient(to bottom, #000, #0001) local;
+  color: goldenrod;
+  text-align: center;
+}
+h1,
+h2 {
+  font-family: "Bungee Inline", cursive;
+  text-align: center;
+}
+
+body {
+  background-color: brown;
+  /*background-color: rgb(131, 0, 61);*/
+}
+
+nav {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+nav li {
+  flex: 1 1 auto;
+  position: relative;
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  flex: 1 1 auto;
+  border-bottom: 4px solid transparent;
+  color: black;
+  background-color: gray;
+  text-decoration: initial;
+  font-family: "Bungee Shade", cursive;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: black;
+  border-bottom: 4px solid red;
+}
+
+nav li a.actif {
+  color: white;
+  background-color: black;
+}
+nav li a.actif:hover {
+  color: white;
+  background-color: brown;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* menu déroulant*/
+nav ul li ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+  display: flex; /* définir un conteneur flexible pour le menu déroulant*/
+  flex-flow: column wrap;
+  background-color: #1b3c59;
+  color: white;
+}
+
+/*mettre les sous éléments en block*/
+
+nav li:hover ul li {
+  float: none;
+}
+
+nav li ul {
+  position: absolute;
+}
+
+/*placement des titres et images*/
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+nav {
+  font-style: italic;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
+.image {
+  text-align: center;
+}
+
+/* colorisation des liens externes présents dans le site*/
+.lien {
+  color: white;
+}
+.lien:hover {
+  color: #adaf0a;
+}
+
+/*colorisation des liens internes du site*/
+.article {
+  color: black;
+}
+.article:hover {
+  color: #adaf0a;
+}
+
+.titre {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.titre:hover {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    /* Mettre le menu en colonne*/
+    flex-direction: column;
+  }
+}
+
+.conteneur,
+#conteneur {
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+}
+
+/* tablette */
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .menu {
+    justify-content: space-between;
+  }
+}
+
+/* cellulaire */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* cacher le menu */
+  .menu {
+    display: none;
+  }
+
+  /* barre de menu */
+  .navbar {
+    display: block;
+    position: relative;
+  }
+
+  /* classe utilisée dans le js pour ouvrir le menu */
+  .active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Menu hamburger */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  top: 0.2em;
+  margin-left: 2vh;
+}
+
+.navbar {
+  font-size: 18px;
+  background-color: #1b3c59;
+  height: 3em;
+}
+.menu {
+  background-color: #1b3c59;
+  list-style-type: none;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.menu a {
+  text-align: center;
+  padding: 1em 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #275177;
+}

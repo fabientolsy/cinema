@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: brown;
+  /*background-color: rgb(131, 0, 61);*/
+}
+
+/*conteneur pour tout les éléments du slider*/
+.conteneur-slider {
+  width: 900px;
+  height: 600px;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+/*conteneur pour toutes les images*/
+.conteneur-images {
+  width: 100%;
+  height: 1%;
+}
+
+.conteneur-images img {
+  width: 100%;
+  /*Pour que les images s'adaptent à la taille du conteneur*/
+  height: auto;
+  /* Pour que les images s'empilent*/
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* conteneur des boutons */
+.commandes {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.commandes button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /* transformer en cercle*/
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.commandes img {
+  width: 15px;
+  position: relative;
+}
+/* pour placer le bouton à gauche */
+.commandes button:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+/* pour placer le bouton à droite */
+.commandes button:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+/* pour décaler l'image à l'intérieur des boutons */
+.commandes button:nth-child(1) img {
+  left: -1px;
+}
+.commandes button:nth-child(2) img {
+  right: -1px;
+}
+
+.cercles {
+  position: absolute;
+  /* pour faire dépasser les cercles en bas du slider */
+  top: 105%;
+  left: 50%;
+  /* centrer les cercles sur l'axe x */
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cercle {
+  width: 30px;
+  height: 30%;
+  border-radius: 50%;
+  /* Mettre un espace entre les cercles */
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #333;
+}
+
+/* couleur du cercle actif */
+.active-cercle {
+  background: rgb(58, 36, 156);
+}
+/* pour faire apparaître le bouton actif */
+.img-actif {
+  opacity: 1 !important;
+}
+
+/*CSS du footer et du bouton contact*/
+input[type="submit"] {
+  margin-bottom: 2%;
+  margin-left: 8%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 0px 12px black;
+  text-align: center;
+  position: relative;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 6px 6px 12px black;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding-left: 43%;
+}

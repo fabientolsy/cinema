@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Actualité cinématographique</title>
+      
+        <!--Lien de la feuille de style générale-->
+        <link rel="stylesheet" href="style/general.css" />
+
+        <!--Lien pour les logos dans les menus et formulaires-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+
+        <!--Lien pour la police des menus-->
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet" />  
+
+        <!--Lien pour la police du header-->
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet" />
+        
+        <!--Lien pour la police des paragraphes-->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+        <style>
+            .vignette-serie{
+                background-color:#2e3440;
+                height:200px;
+                width:200px;
+                border:1px black solid;
+                border-radius:100px;
+                float:left;
+                margin-right:10px;
+                cursor:pointer;
+                overflow:hidden;
+                margin-left: 15%;
+                margin-top: 5%;
+            }
+            .vignette-serie:hover{
+                opacity:0.7;
+                cursor:pointer;
+            }
+            .vignette-serie img{
+                height:200px;
+
+            }
+            #zone-affichage{
+                background-color:#4c566a;
+                color: white;
+                width:700px;
+                height: relative;
+                float:left;
+                margin-left:30%;
+                margin-top:8%;
+                border:solid 3px black;
+                border-radius:30px;
+            }
+            .detail-service{
+                display:none;
+			          width:700px;
+                height:700px;
+                border:solid 1px black;			
+            }
+		
+		        .nom-service{
+			          height:10px;
+                font-size:30px;
+                margin-right:auto;
+                margin-left:auto;
+		        }
+
+		        .description-service{
+			          float:left;
+			          width:300px;
+		        }
+		
+		        .service-illustration{
+			          float:left;
+			          width:300px;
+                padding-top: 25%;
+	          }
+
+            h4{
+              padding-left: 2%;
+            }
+
+            h5{
+              font-size: 1.25em;
+              padding-left: 5%;
+              padding-top: 10%
+            }
+
+            p{
+              padding-bottom: 2%;
+            }
+
+           #netflix-txt{
+             margin-top: 1.5%;
+           }
+
+           #detail-Youtube, p{
+             padding-left: 2.5%;
+           }
+           
+            .conteneur{
+              height: 172vh;
+            }
+            input[type="submit"] {
+                margin-bottom: 2%;
+                margin-left: 9%;
+                padding-left: 1%;
+                padding-right: 1%;
+                border-radius: 20px;
+                border: 0;
+                color: white;
+                background-color: black;
+                box-shadow: 0px 0px 12px black;
+                text-align: center;
+                position: relative;
+            }
+
+            input[type="submit"]:hover {
+                box-shadow: 6px 6px 12px black;
+            }
+    
+            footer{
+                position: relative;
+                width: 100%;
+                height: 100px;
+                padding-left: 42%;
+            }
+        </style>
+        <script src="javaScript/vignette-vedette.js" defer></script>
+        <script src="javaScript/liens-sociaux.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+          <nav >
+       <!--   <i class="fas fa-bars"></i>-->
+            <ul>
+              <li>
+                <a href="index.html"><i class="fas fa-home icone"></i> Accueil
+                </a> 
+              </li>
+
+              <li>
+                <a href="vignette-vedette.html" class="actif" ><i class="fas fa-ribbon"></i>Vignette vedette </a>
+              </li>
+      
+              <li>
+                <a href="articles.html">Articles <i class="fas fa-chevron-circle-down icone"></i>
+                </a>
+                <ul>
+                  <li>
+                    <a href="la-review-du-mois.html"><i class="fas fa-history icone"></i> Review</a>
+                  </li>
+      
+                  <li>
+                    <a href="les-recommandations.html"><i class="far fa-newspaper icone"></i> Recommandations
+                    </a>
+                  </li>
+                  <li>
+                    <a href="les-prochaines-sorties.html"><i class="far fa-calendar-alt icone"></i> Arrivées
+                      prochaines</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="faq.html"><i class="fab fa-forumbee"></i>FAQ</a>
+            </li>
+              <li>
+                <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+            </li>
+      
+              <li>
+                <a href="espace-membre.html"><i class="fas fa-users icone"></i> Espace membre</a>
+              </li>
+              <li>
+                <a href="mission.html"><i class="fas fa-thumbtack icone"></i> Missions</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="header">
+            <a href="index.html" class="titre">
+              <h1>Actualité cinématographique</h1>
+            </a>
+        
+            <br />
+        
+            <h2>Vignette vedette</h2>
+        </div>
+
+        <div class="conteneur">
+          
+            <div class="vignette-serie" id="netflix">
+                <img src="decoration/netflix.png" alt="netflix">
+            </div>
+
+            <div class="vignette-serie" id="prime">
+                <img src="decoration/prime.png" alt="prime video">
+            </div>
+
+            <div class="vignette-serie" id="Youtube">
+                <img src="decoration/youtube-flat.png" alt="youtube">
+            </div>
+
+            <div id="zone-affichage">
+
+
+
+            </div>
+
+            <div class="detail-service" id="detail-netflix">
+                <h4 class="nom-service">Netflix</h4>
+
+                <img src="decoration/netflix.png" alt="netflix" class="service-illustration" id="netflix-txt">
+
+                <div class="description-service">
+                <h5>Origines</h5>
+                <p>A l'origine, Netflix été un site internet où 
+                   il était possible de louer chaque film ou série 
+                   qu'on voulait regardé et on recevait le DVD qu'on devait renvoyer au bout d'un certain moment. 
+                   Suite à l'assention du dématérialisé et d'internet, Netflix a commencé à faire faillite 
+                   mais à rattraper le coup en modifiant leur formule: il propose donc à partir de ce moment 
+                   de payer un abonnement et de pouvoir directement regarder le contenu sur leur plateformeet non plus en DVD </p>
+                
+                <h5>Les types d'abonnement</h5>
+                <p>Netflix propose différents types d'abonnement à son service. Les différences entre les forfaits sont les prix, 
+                    la résolution, le nombre d'appareils qui peuvent télécharger et le nombre d'utilisateurs en simultané sur le même compte.</p>
+                <p>Le forfait dit "essentiel" est le forfait à 7.99E par mois qui permet de regarder du contenu au maximum en 480p et permet de 
+                  télécharger du contenu sur un seul appareil au maximum.</p>
+                <p>Le forfait dit "standard" à 11.9E vous permet de regarder du contenu jusqu'en 1080p et de télécharger du contenu 
+                  sur 2 appareils maximum </p>
+                <p>Finalement, le forfait "prenium" permet de regarder du contenu jusqu'en 4K HDR  et de télécharger du contenu sur 4 appareils maximum pour un prix de 15.99E</p>
+                </div>
+              </div>
+
+
+            <div class="detail-service" id="detail-prime">
+                <h4 class="nom-service">Amazon Prime Video</h4>
+
+                <img src="decoration/prime.png" alt="prime" class="service-illustration">
+
+                <div class="description-service">
+                <h5>Origines</h5>
+                <p>A l'origine, Amazon Prime Video n'exitait pas, il n'y avait que Amazon Prime qui est un abonnement prenium à Amazon qui permet d'être livrée pls rapidement 
+                  sur les artciles commendé sur le site marchand. Avec le succès de Netflix, l'entreprise Jeff Bezos prend l'initiative de lancer sa plateforme de
+                   streaming accessible par l'abonnement à Amazon Prime</p>
+                
+                <h5>Abonnement</h5>
+                <p>En ce qui concerne l'abonnement, c'est différent de Netflix. En effet, l'entreprise en propose qu'un seul, mais deux façons de payer la recurence dont une plus aventagueuse pour le client</p>
+                <p>Il y a la possibilité de payer à chaque mois et donc d'être abonné mensuellement au prix de 6.99E.</p>
+                <p>Mais il y a également de payer annuellement avec un prix avantageux de 49.99E par an. La différence est donc qu'avec cet abonnement, vous êtes abonné pour une année après le prélèvement.</p>
+                </div>
+              </div>
+
+
+            <div class="detail-service" id="detail-Youtube">
+              <h4 class="nom-service">YouTube</h4>
+
+              <img src="decoration/youtube-flat.png" alt="youtube" class="service-illustration">
+              
+              <div class="description-service">
+              <h5>Origines</h5>
+              <p>A l'origine, YouTube était un site créée par des anciens emplyés de PayPal qui voulaient créer un site de rencontre où le but était de poster des vidéos et voir regarder les vidéos des autres 
+                pour chercher l'ame soeur</p>
+              <p>Les utilisateurs étants contre cette idée, s'en sont servis différemment et de la façon dont nous connaisons actuellment Yotub: poster des vidéos de différents types (tuto, podcast, etc) à 
+                des fins de divertissement</p>
+              <p>Pour arriver au YouTube d'aujourd'hui, YouTube a été très rapidement racheté par Google, envrion un an après sa création</p>
+              <p>Aujourd'hui, on peut regarder, comme dit plutôt, des vidéos de tous genres mais également acheter ou louer (en fonction de votre volonté) des films et séries avec des promotions hebdomadaires.</p>
+                
+              <h5>Prix</h5>
+              <p>Du côté du prix, vous pouvez regarder YouTube gratuitement mais vous aurais des pubs. Pour remédier à cela, vous pouvez vous abonner
+                 à YouTube Prenium qui retire les pibs, vous permet de télécharger les vidéos directement sur la plateforme pour les regarder en hors-ocnnexion et vous offre la possiblité d'utiliser YouTube 
+                 Music (le Spotify de YouTube)</p>
+              <p>Il y a différents prix pour l'abonnement Prenium: le prix basique à 11.99E par mois, l'offre étudiante à 6.99E par mois (ces deux offres utilisables par un seul compte) et l'offre Famille à 
+                17.99E où vous pouvez ajouter 4 autres comptes à cet abonnement pour que au total 5 personnes puissent y profiter</p>
+              </div>
+            </div>
+        </div>
+
+        <footer>
+            <form action="contact.html">
+              <input
+              type="submit"
+              id="contact"
+              value="Nous contacter" 
+              />
+            </form>
+            <div class="liens-sociaux">
+              <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+              <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+              <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+              <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+              <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>OCS</span></a>
+            </div>
+          </footer>
+    </body>
+</html>

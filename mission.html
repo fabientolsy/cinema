@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Missions</title>
+
+    <!--Lien de la feuille de style générale-->
+    <link rel="stylesheet" href="style/general.css" />
+
+    <!--Lien pour les logos dans les menus et formulaires-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!--Lien pour la police des menus-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Lien pour la police du header-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      table {
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      }
+
+      table,
+      td,
+      th {
+        border: solid 2px black;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      thead {
+        background-color: red;
+        color: white;
+      }
+
+      tbody {
+        color: black;
+      }
+
+      caption {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .jours {
+        background-color: red;
+        color: #3a3a3a;
+      }
+      input[type="submit"] {
+        margin-bottom: 2%;
+       margin-left: 8%;
+       padding-left: 1%;
+       padding-right: 1%;
+       border-radius: 20px;
+       border: 0;
+       color: white;
+       background-color: black;
+       box-shadow: 0px 0px 12px black;
+       text-align: center;
+       position: relative;
+     }
+
+    input[type="submit"]:hover {
+      box-shadow: 6px 6px 12px black;
+    }
+    footer{
+          position: relative;
+          width: 100%;
+          padding-top: 10px;
+          height: 100px;
+          padding-left: 40%;
+        }
+    </style>
+    <script src="javaScript/liens-sociaux.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home icone"></i> Accueil </a>
+          </li>
+
+          <li>
+            <a href="vignette-vedette.html" ><i class="fas fa-ribbon"></i>Vignette vedette</a>
+          </li>
+          
+          <li>
+            <a href="articles.html"
+              >Articles <i class="fas fa-chevron-circle-down icone"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="la-review-du-mois.html"
+                  ><i class="fas fa-history icone"></i> Review</a
+                >
+              </li>
+
+              <li>
+                <a href="les-recommandations.html"
+                  ><i class="far fa-newspaper icone"></i> Recommandations
+                </a>
+              </li>
+              <li>
+                <a href="les-prochaines-sorties.html"
+                  ><i class="far fa-calendar-alt icone"></i> Arrivées
+                  prochaines</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="faq.html"><i class="fab fa-forumbee"></i>FAQ</a>
+        </li>
+          <li>
+            <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+        </li>
+          <li>
+            <a href="espace-membre.html"
+              ><i class="fas fa-users icone"></i> Espace membre</a
+            >
+          </li>
+          <li>
+            <a href="mission.html" class="actif"
+              ><i class="fas fa-thumbtack icone"></i> Missions</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+   
+    <div class="header">
+      <a href="index.html" class="titre">
+        <h1>Actualité cinématographique</h1>
+      </a>
+
+      <br />
+
+      <h2>Missions</h2>
+    </div>
+
+
+    <div class="conteneur">
+
+    <table>
+      <caption>
+        Plannification de la semaine
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="5">Début de semaine</th>
+          <th colspan="2">Fin de semaine</th>
+        </tr>
+      </thead>
+      <tr class="jours">
+        <th>Lundi</th>
+        <th>Mardi</th>
+        <th>Mercredi</th>
+        <th>Jeudi</th>
+        <th>Vendredi</th>
+        <th>Samedi</th>
+        <th>Dimanche</th>
+      </tr>
+
+      <tbody>
+        <tr>
+          <td colspan="2">Recherche d'idées pour les recommandations</td>
+          <td colspan="2">Mise en ligne des nouvelles recommandations</td>
+          <td></td>
+          <td></td>
+          <td rowspan="3">Repos</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">Recherche des arrivées prochaines *</td>
+          <td colspan="2">Mise en ligne des prochaines arrivées *</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="2">Recherhce du sujet de la review *</td>
+          <td colspan="2">Mise en ligne la nouvelle review *</td>
+        </tr>
+      </tbody>
+  
+    </table>
+    <p>* = uniquement sur la dernière semaine du mois</p>
+  </div>
+
+  <footer>
+    <form action="contact.html">
+      <input
+      type="submit"
+      id="contact"
+      value="Nous contacter" 
+      />
+    </form>
+    <div class="liens-sociaux">
+      <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+      <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+      <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+      <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+      <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>OCS</span></a>
+    </div>
+  </footer>
+  </body>
+</html>

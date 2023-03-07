@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Espace membre</title>
+
+    <!--Lien de la feuille de style générale-->
+    <link rel="stylesheet" href="style/general.css" />
+
+    <!--Lien de la feuille de style spécifique à la page membre-->
+    <link rel="stylesheet" href="style/membre.css" />
+
+    <!--Lien pour les logos des menus et formulaires-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!--Lien pour la police d'écriture des menus-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Lien pour la police du header-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javaScript/espace-membre.js" defer></script>
+    <script src="javaScript/liens-sociaux.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home icone"></i> Accueil </a>
+          </li>
+
+          <li>
+            <a href="vignette-vedette.html" ><i class="fas fa-ribbon"></i>Vignette vedette</a>
+          </li>
+          
+          <li>
+            <a href="articles.html"
+              >Articles <i class="fas fa-chevron-circle-down icone"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="la-review-du-mois.html"
+                  ><i class="fas fa-history icone"></i> Review</a
+                >
+              </li>
+
+              <li>
+                <a href="les-recommandations.html"
+                  ><i class="far fa-newspaper icone"></i> Recommandations
+                </a>
+              </li>
+              <li>
+                <a href="les-prochaines-sorties.html"
+                  ><i class="far fa-calendar-alt icone"></i> Arrivées
+                  prochaines</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="faq.html"><i class="fab fa-forumbee"></i>FAQ</a>
+        </li>
+          <li>
+            <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+        </li>
+          <li>
+            <a href="espace-membre.html" class="actif"
+              ><i class="fas fa-users icone"></i> Espace membre</a
+            >
+          </li>
+          <li>
+            <a href="mission.html"
+              ><i class="fas fa-thumbtack icone"></i> Missions</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="header">
+      <a href="index.html" class="titre">
+        <h1>Actualité cinématographique</h1>
+      </a>
+
+      <br />
+
+      <h2>Espace membre</h2>
+    </div>
+  
+
+<div class="conteneur">
+    <div class="centrer">
+      <form class="tableau"
+        method="POST"
+        id="formulaire-connexion"
+        onsubmit="return validation()" >
+        
+        <fieldset>
+          <legend><label for="pseudo">Connnexion</label></legend>
+      
+          <div>
+            <div class="aide-surgissante" id="aide-pseudo"></div>
+            <label id="etiquette-pseudo" title="Veuillez saisir le pseudo que vous avez choisit au moment de l'incscription" for="pseudo"> Entrez un pseudo: </label>
+            <div>
+            <i class="fas fa-user icone"></i>
+            <input
+              type="text"
+              name="pseudo-connexion"
+              id="pseudo"
+              placeholder="Votre pseudo"
+            />
+           
+            <div id="message1"></div>
+          </div>
+        </div>
+
+         
+        <div>
+        <div class="aide-surgissante" id="aide-password"></div>
+            <label id="etiquette-password" title="Veuillez saisir le mot de passe que vous avez choisit lors de la création du compte" for="password"> Saisir le mot de passe: </label>
+
+            <div>
+            <i class="fas fa-key icone"> </i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Votre mot de passe"
+            />
+
+          
+            <div id="message2"></div>
+          </div>
+        </div>
+
+          <input
+            type="submit"
+            name="send-boutom"
+            id="sender"
+            value="Connnexion"
+          />
+     
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <form action="contact.html">
+      <input
+      type="submit"
+      id="contact"
+      value="Nous contacter" 
+      />
+    </form>
+    <div class="liens-sociaux">
+      <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+      <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+      <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+      <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+      <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>OCS</span></a>
+    </div>
+  </footer>
+  </body>
+</html>

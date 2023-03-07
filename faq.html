@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head lang="fr">
+    <meta charset="utf-8" />
+    
+    <title>Foire aux questions</title>
+
+    <!--Lien de la fiche de style générale-->
+    <link rel="stylesheet" href="style/general.css" />
+
+    <!--Lien pour les logos des menus et des formulaires-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!--Lien pour la police des menus-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Lien pour la police du header-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+    .accordeonConteneur{
+        padding:30px;
+        background: brown;
+        display:flex;
+        flex-direction: column;
+        box-sizing:border-box;
+        margin:10%;
+    }
+
+    .accordeonItem{
+        display:flex;
+        flex-direction: column;
+        box-sizing:border-box;
+    }    
+
+    .accordeonItemHeader{
+        cursor:pointer;
+        margin:0px 0px 10px 0px;
+        padding:10px;
+        background:#868686;
+        color:white;
+        border-radius:3px;
+        box-sizing:border-box;
+    }
+
+    .fermer .accordeonItemContenu{
+        height:0px;
+        transform:scaleY(0);
+    }
+    
+    .ouvert .accordeonItemContenu{
+        padding:20px;
+        background: #bdc3c7;
+        border:1px solid black;
+        width:100%;
+        margin:0px 0px 10px 0px;
+        transform:scaleY(1);
+        transform-origin:top;
+        box-sizing:border-box;
+    }
+
+    .ouvert .accordeonItemHeader{
+        margin:0px;
+        border-top-left-radius:3px;
+        border-top-right-radius:3px;
+        border-bottom-right-radius:0px;
+        border-bottom-left-radius:0px;
+        background:#3a3a3a;
+        color:#7f8c8d;
+    }
+
+    input[type="submit"] {
+        margin-bottom: 2%;
+        margin-left: 8%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border-radius: 20px;
+        border: 0;
+        color: white;
+        background-color: black;
+        box-shadow: 0px 0px 12px black;
+        text-align: center;
+        position: relative;
+    }
+
+    input[type="submit"]:hover {
+        box-shadow: 6px 6px 12px black;
+    }
+
+    footer{
+        position: relative;
+        width: 100%;
+        padding-top: 10px;
+        height: 100px;
+        padding-left: 40%;
+    }
+
+    </style>
+
+    <script src="javaScript/accordeon.js" defer></script>
+    <script src="javaScript/liens-sociaux.js" defer></script>
+
+  </head>
+
+  <body>
+    <header class="header">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html"><i class="fas fa-home icone"></i> Accueil </a>
+            </li>
+  
+            <li>
+              <a href="vignette-vedette.html" ><i class="fas fa-ribbon"></i>Vignette vedette</a>
+            </li>
+            
+            <li>
+              <a href="articles.html">
+                Articles
+                <i class="fas fa-chevron-circle-down icone"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="la-review-du-mois.html"
+                    ><i class="fas fa-history icone"></i> Review</a
+                  >
+                </li>
+  
+                <li>
+                  <a href="les-recommandations.html">
+                    <i class="far fa-newspaper icone"></i>
+                    Recommandations
+                  </a>
+                </li>
+                <li>
+                  <a href="les-prochaines-sorties.html"
+                    ><i class="far fa-calendar-alt icone"></i> Arrivées
+                    prochaines</a
+                  >
+                </li>
+              </ul>
+            </li>
+  
+            <li>
+                <a href="faq.html" class="actif"><i class="fab fa-forumbee"></i>FAQ</a>
+            </li>
+            <li>
+              <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+          </li>
+            <li>
+              <a href="espace-membre.html"
+                ><i class="fas fa-users icone"></i> Espace membre</a
+              >
+            </li>
+            <li>
+              <a href="mission.html"
+                ><i class="fas fa-thumbtack icone"></i> Missions</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+  
+      <div class="header">
+        <a href="index.html" class="titre">
+          <h1>Actualité cinématographique</h1>
+        </a>
+  
+        <br />
+  
+        <h2>Foires aux questions</h2>
+      </div>
+
+      <div class="accordeonConteneur">
+        <div class="accordeonItem ouvert">
+              <h3 class="accordeonItemHeader">Les sources d'informations</h3>
+              <div class="accordeonItemContenu">
+                    <p>
+                        La quasi totalité de la review est la retrenscription de mes pensées. Seuls les informations qui traitent du nom des acteurs et du réalisateurs sont issus de la fiche Wikipédia du contenu ou AlloCiné si Wikipédia ne posséde pas les informationsnécessaires.
+                    </p> 
+                    <p>
+                        Les recommandations, à titrequasiment égale à la review, possèdes les informations que je possaide déjà à retrensmettre. Cependant, j'effectue certaines vérifications avant d'écrire, et pour cela, je vérifie mes dires sur les sites de diffusion du contenu ou des pages Wikipédia si je n'ai pas les infos voulus sur les sites de diffusions.
+                    </p>
+                    <p>
+                        En ce qui concerne les prochaines sorties, je me rend sur les pages Twitter des sites de diffusions (Netflix, OCS, etc...) et je regarde leur annonces des nouveautés du mois.
+                    </p>
+              </div>
+            </div>
+        
+            <div class="accordeonItem fermer">
+              <h3 class="accordeonItemHeader">Source d'images</h3>
+              <div class="accordeonItemContenu">
+                <p>
+                    En ce qui concer la source des images, la majorité des images sont issues du site internt Unsplash qui possède une grande diversité d'images de très bonnes qualitées et mibres de droits.
+                </p>
+                <p>
+                    Cependant, certaines images n'y sont pas issues. C'est le cas des images de toutes les images de la page slider où les photos sont issues de Google Images.
+                </p>
+              </div>
+            </div>
+        
+            <div class="accordeonItem fermer">
+              <h3 class="accordeonItemHeader">Qui sus-je ?</h3>
+              <div class="accordeonItemContenu">
+                <p>
+                    Je suis un étudiant français dans une école canadienne et étudiant les techniques de l'informatique. Je passevbeacuoup de temps à regarder des films et des séries ce qui me permet de parler de contenus cinématographiques de façon un minimum aisaiment.
+                </p>
+              </div>
+            </div>
+        </div>
+        <footer>
+            <form action="contact.html">
+              <input
+              type="submit"
+              id="contact"
+              value="Nous contacter" 
+              />
+            </form>
+            <div class="liens-sociaux">
+              <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+              <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+              <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+              <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+              <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>Prime Video</span></a>
+              
+            </div>
+          </footer>
+        </body>
+  </html>

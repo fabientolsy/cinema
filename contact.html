@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+
+    <!--Lien de la feuille de style générale-->
+    <link rel="stylesheet" href="style/general.css" />
+
+    <!--Lien de la feuille de style spécifique à la page contact-->
+    <link rel="stylesheet" href="style/contact.css" />
+
+    <!--Lien pour les logos dans les menus et formulaires-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!--Lien pour la police d'écriture des menus-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Lien pour la police du header-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javaScript/contact.js" defer></script>
+    <script src="javaScript/liens-sociaux.js" defer></script>
+  </head>
+
+  <body>
+    <header><nav>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home icone"></i> Accueil </a>
+        </li>
+
+        <li>
+          <a href="vignette-vedette.html" ><i class="fas fa-ribbon"></i>Vignette vedette</a>
+        </li>
+        
+        <li>
+          <a href="articles.html"
+            >Articles <i class="fas fa-chevron-circle-down icone"></i>
+          </a>
+          <ul>
+            <li>
+              <a href="la-review-du-mois.html"
+                ><i class="fas fa-history icone"></i> Review</a
+              >
+            </li>
+
+            <li>
+              <a href="les-recommandations.html"
+                ><i class="far fa-newspaper icone"></i> Recommandations
+              </a>
+            </li>
+            <li>
+              <a href="les-prochaines-sorties.html"
+                ><i class="far fa-calendar-alt icone"></i> Arrivées
+                prochaines</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="faq.html"><i class="fab fa-forumbee"></i>FAQ</a>
+      </li>
+        <li>
+          <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+      </li>
+        <li>
+          <a href="espace-membre.html"
+            ><i class="fas fa-users icone"></i> Espace membre</a
+          >
+        </li>
+        <li>
+          <a href="mission.html"
+            ><i class="fas fa-thumbtack icone"></i> Missions</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+<div class="header">
+  <a href="index.html" class="titre">
+    <h1>Actualité cinématographique</h1>
+  </a>
+
+  <br />
+
+  <h2>Contact</h2>
+</div>
+
+    
+<div class="conteneur">
+    <form method="POST" id="formulaire-contact" onsubmit="return validation()">
+      <fieldset class="fieldset">
+        <legend><label for="mail"> Me contacter</label></legend>
+
+
+        <div>
+
+          <div class="aide-surgissante" id="aide-mail"></div>
+
+          <label for="mail" class="ref" id="etiquette-mail" title="Veuillez renseigner votre adresse mail pour vous répondre">E-mail : </label>
+
+          <div>
+          <i class="fas fa-at icone"></i>
+          <input
+            type="text"
+            id="mail"
+            class="mail"
+            placeholder="Votre mail juste ici"
+            value=""
+          />
+          <div id="message1"></div>
+        </div>
+      </div>
+       
+      <div>
+
+          <div class="aide-surgissante" id="aide-titre"></div>
+          <label for="title" class="ref" id="etiquette-titre" title="Veuillez saisir l'objet de votre message">Titre du message : </label>
+
+          <div>
+          <i class="fas fa-cubes icone"></i>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="title"
+            placeholder="Objet du message"
+          />
+          <div id="message2"></div>
+        </div>
+      </div>
+        
+      <div>
+        <div class="aide-surgissante" id="aide-message"></div>
+        <label for="message" class="ref" id="etiquette-message" title="Veuillez saisir avec le plus de détails les raisons du contact">Message :</label>
+
+        <div>
+
+          <i class="fas fa-align-center icone" ></i>
+
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="1"
+            placeholder="Votre message"  
+            ></textarea>
+
+          <div id="message3"></div>
+
+        </div>
+
+      </div>
+
+        <input type="submit" value="Envoyer" id="sender" />
+      </fieldset>
+    </form>
+  </div>
+   
+    <footer>
+      <p>
+        En cas de problèmes, me contacter par mail en cliquant
+  
+        <a href="mailto:2031900@cgmatane" class="lien"> juste ici</a> <br />
+        <br />
+        Source des images:
+        <a href="https://unsplash.com/" target="_blank" class="lien">Unsplash</a>
+      </p>
+      <form action="index.html">
+        <input
+        type="submit"
+        id="accueil"
+        value="Accueil" 
+        />
+      </form>
+      <div class="liens-sociaux">
+        <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+        <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+        <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+        <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+        <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>OCS</span></a>
+      </div>
+    </footer>
+  </body>
+  
+</html>

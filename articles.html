@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Articles</title>
+
+    <!--Lien de la feuille de style générale-->
+    <link rel="stylesheet" href="style/general.css" />
+
+    <!--Lien pour les logos dans les menus et formulaires-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <!--Lien pour la police des paragraphes-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <!--Lien pour la police des titres h3 dans la page-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Lien pour la police des menus-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Lien pour la police du header-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
+
+    <style>
+      *{
+        padding:0;
+        margin:0;
+      }
+
+      .image{
+        margin-top: 2.5%;
+      }
+
+      .vigniette{
+        position:relative;
+        display:inline-block;
+        width:200px;
+        height:auto;
+        border: 2px black solid;
+        padding:3px;
+      }
+
+      .fin-vigniette{
+        display:none;
+      }
+
+      .bouton-balancier{
+        /*https://developer.mozilla.org/fr/docs/Web/CSS/cursor*/
+        cursor:pointer;
+        padding:3px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .test{
+        margin-top: 3%;
+        margin-bottom: 5%;
+        margin-left: 12.5%;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px black solid;
+        width: 75%;
+      }
+
+      p{
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+      }
+      p,.lien{
+        font-family: 'Cinzel', serif;
+      }
+      
+      .section{
+        padding-left: 2%;
+        padding-top: 1.5%;
+     }
+
+     .conteneur{
+       height: 150vh;
+     }
+
+      input[type="submit"] {
+        margin-bottom: 2%;
+        margin-left: 8%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border-radius: 20px;
+        border: 0;
+        color: white;
+        background-color: black;
+        box-shadow: 0px 0px 12px black;
+        text-align: center;
+        position: relative;
+     }
+
+      input[type="submit"]:hover {
+        box-shadow: 6px 6px 12px black;
+      }
+      
+      footer{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding-left: 42%;
+      }
+    </style>
+    <script src="javaScript/article.js" defer></script>
+    <script src="javaScript/liens-sociaux.js" defer></script>
+    <script src="javaScript/agrandissement.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home icone"></i> Accueil </a>
+          </li>
+
+          <li>
+            <a href="vignette-vedette.html" ><i class="fas fa-ribbon"></i>Vignette vedette</a>
+          </li>
+
+          <li>
+            <a href="articles.html" class="actif">
+              Articles
+              <i class="fas fa-chevron-circle-down icone"></i>
+            </a>
+
+            <ul>
+              <li>
+                <a href="la-review-du-mois.html"
+                  ><i class="fas fa-history icone"></i> Review</a
+                >
+              </li>
+
+              <li>
+                <a href="les-recommandations.html"
+                  ><i class="far fa-newspaper icone"></i> Recommandations
+                </a>
+              </li>
+              <li>
+                <a href="les-prochaines-sorties.html"
+                  ><i class="far fa-calendar-alt icone"></i> Arrivées
+                  prochaines</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="faq.html"><i class="fab fa-forumbee"></i>FAQ</a>
+        </li>
+          <li>
+            <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+        </li>
+          <li>
+            <a href="espace-membre.html"
+              ><i class="fas fa-users icone"></i> Espace membre</a
+            >
+          </li>
+          <li>
+            <a href="mission.html"
+              ><i class="fas fa-thumbtack icone"></i> Missions</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+      <div class="header">
+        <a href="index.html" class="titre">
+          <h1>Actualité cinématographique</h1>
+        </a>
+  
+        <br />
+  
+        <h2>Artciles</h2>
+      </div>
+
+    <div class="conteneur">
+    <div id="compteur"></div>
+
+    <div class="image">
+      <a href="la-review-du-mois.html">
+        <img src="decoration/review.jpg" alt="review" />
+      </a>
+
+      <a href="les-recommandations.html"
+        ><img src="decoration/interview.jpg" alt="interview" />
+      </a>
+
+      <a href="les-prochaines-sorties.html">
+        <img src="decoration/montage.jpg" alt="montage" />
+      </a>
+    </div>
+
+    
+
+<div class="position">
+
+  <!--Article 1-->
+   <div class="test" id="article1"> 
+   
+      <a href="la-review-du-mois.html" class="article"><h3 class="section" id="titre-p1">La review du mois: </h3></a>
+    
+
+    <div class="vignette" id="vignette-article1">
+
+      <p class="introduction-vignette" id="debut-vignette-artcile1">
+
+      Dans la section
+      <a href="la-review-du-mois.html" class="lien">"La review du mois" </a>
+      vous y trouverez une critique d'un film ou d'une série que j'ai récemment
+      regardé afin de vous partager mon avis sur ce dernier.
+
+      </p>
+      
+      <p class="fin-vigniette" id="fin-vigniette-article1">
+        Une nouvelle review sera mise en ligne tous les mois. Vous pourrez donc découvrire ou redécouvrir un film chaque mois
+      </p>
+
+      <a class="bouton-balancier" id="bouton-balancier-article1">Voir plus</a>
+    </div>
+  </div>
+
+  <!--Artcile 2-->
+  <div class="test" id="aricle2">
+ 
+      <a href="les-recommandations.html" class="article">
+        <h3 class="section" id="titre-p2">Les recommandations: </h3>
+      </a>
+  
+      <div class="vignette" id="vignette-article2">
+       
+        <p class="introduction-vignette" id="debut-vignette-artcile2">
+          Dans la section
+          <a href="les-recommandations.html" class="lien" >"Recommandations"</a>
+          vous y trouverez des séries et films que je recommande ainsi qu'un court
+          synopsis et de la plateforme de visionnage.
+      </p>
+
+      <p class="fin-vigniette" id="fin-vigniette-article2">
+        Dans cet article, vous pourrez également voir les bandes annonces de ce qui est proposé en cliquant sur les titres de contenu. 
+        Un nouvel onglet s'ouvrira alors dans le but de vous diriger vers YouTube pour voir la bande annonce officielle.
+      </p>
+
+      <a class="bouton-balancier" id="bouton-balancier-article2">Voir plus</a>
+      </div>
+  </div>
+
+  <!--Article 3-->
+  <div class="test" id="article3">
+  
+      <a href="les-prochaines-sorties.html" class="article">
+        <h3 class="section" id="titre-p3">Les prochaines sorties: </h3>
+      </a>
+   
+    <div class="vignette" id="vignette-article3">
+
+      <p class="introduction-vignette" id="debut-vignette-artcile3">
+      Dans <a href="les-prochaines-sorties.html" class="lien" >cet article</a>
+      vous trouverez ce qui arrive sur les plateformes de streaming tel que
+      Netflix, OCS, etc.
+      </p>
+
+      <p class="fin-vigniette" id="fin-vigniette-article3">
+        C'est donc l'occasion d'être sur de rien louper, et de vérifier que vous n'avez pas retard sur des thèmes que vous appréciez et même vous décider à vous abonner à un des services
+      </p>
+
+      <a class="bouton-balancier" id="bouton-balancier-article3">Voir plus</a>
+    </div>
+  </div>
+</div>
+</div>
+<footer>
+<form action="contact.html">
+  <input
+  type="submit"
+  id="contact"
+  value="Nous contacter" 
+  />
+</form>
+<div class="liens-sociaux">
+  <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+  <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+  <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+  <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+  <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>OCS</span></a>
+</div>
+</footer>
+  </body>
+</html>

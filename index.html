@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Actualité cinématographique</title>
+
+  <!--Lien de la feuille de style générale-->
+  <link rel="stylesheet" href="style/general.css" />
+
+  <link rel="stylesheet" href="style/index.css">
+  
+  <!--Lien pour les logos dans les menus et formulaires-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+
+  <!--Lien pour la police des paragraphes-->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+
+  <!--Lien pour la police des titres h3 dans la page-->
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet" />
+
+  <!--Lien pour la police des menus-->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet" />
+
+  <!--Lien pour la police du header-->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet" />
+
+
+  <style>
+   html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+#header {
+  color: white;
+  text-align: center;
+}
+
+/*CSS accueil*/
+.accueil {
+  width: 100%;
+  height: 100vh;
+  background: url(decoration/couloir.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  padding-top: 15%;
+  color: white;
+}
+
+h2{
+  padding-top: 5%;
+  color: white;
+}
+
+/*CSS contenu principal*/
+h3 {
+  font-family: "Racing Sans One", cursive;
+}
+
+p {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.rebours {
+  border: solid black 2px;
+  background-image: url(decoration/neige.jpg);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+  font-size: 16px;
+}
+
+.txt {
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+  color: indigo;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.compte_a_rebours {
+  padding-bottom: 2%;
+}
+
+#compte_a_rebours {
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold;
+}
+
+.explication {
+  position: relative;
+  margin-top: 2%;
+}
+
+.explication-txt {
+  display: inline-block;
+  width: 75%;
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+.img1 {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.membre {
+  position: relative;
+}
+
+.membre-txt {
+  display: inline-block;
+  width: 75%;
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.img2 {
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+/*CSS du footer et du bouton contact*/
+input[type="submit"] {
+  margin-bottom: 2%;
+  margin-left: 8%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 0px 12px black;
+  text-align: center;
+  position: relative;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 6px 6px 12px black;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding-left: 40%;
+}
+
+  </style>
+  
+  <script src="javaScript/rebours.js" defer></script>
+  <script src="javaScript/liens-sociaux.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+
+      <ul>
+        <li>
+          <a href="index.html" class="actif"><i class="fas fa-home icone"></i> Accueil
+          </a>
+        </li>
+
+        <li>
+          <a href="vignette-vedette.html" ><i class="fas fa-ribbon"></i>Vignette vedette</a>
+        </li>
+
+        <li>
+          <a href="articles.html">Articles <i class="fas fa-chevron-circle-down icone"></i>
+          </a>
+          <ul>
+            <li>
+              <a href="la-review-du-mois.html"><i class="fas fa-history icone"></i> Review</a>
+            </li>
+
+            <li>
+              <a href="les-recommandations.html"><i class="far fa-newspaper icone"></i> Recommandations
+              </a>
+            </li>
+            <li>
+              <a href="les-prochaines-sorties.html"><i class="far fa-calendar-alt icone"></i> Arrivées
+                prochaines</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="faq.html"><i class="fab fa-forumbee"></i>FAQ</a>
+      </li>
+        <li>
+          <a href="slider.html"><i class="fas fa-images"></i> Slider</a>
+      </li>
+        <li>
+          <a href="espace-membre.html"><i class="fas fa-users icone"></i> Espace membre</a>
+        </li>
+
+        <li>
+          <a href="mission.html"><i class="fas fa-thumbtack icone"></i> Missions</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="accueil" >
+    <a href="index.html" class="titre">
+      <h1>Actualité cinématographique</h1>
+    </a>
+
+    <br />
+
+    <h2>Accueil</h2>
+  </div>
+  
+  <div class="contenu" id="conteneur">
+  <div class="rebours" >
+    <p class="txt">
+      "Jingle Jangle: un Noël Enchanté" est une comédie musicale féerique dans lequel un inventeur,
+      Jeronicus Jangle, doit absolument présenter une excel&lente et brillante création avant le jour de Noël
+      sous risque de tout perdre s'il n'y arrive pas. Cette comédie musicale nous procurera certaines fois dans un sentiment
+      d'enthousiasme, touchant d'autres fois à travers un univers d'émerveillements.
+    </p>
+    <div id="compte_a_rebours" class="compte_a_rebours">
+      <noscript>Fin de l'évènement le 1er janvier 2018. </noscript>
+    </div>
+  </div>
+
+  <div class="explication">
+    <p class="explication-txt">
+      Tu en as marre de chercher pendant plusieurs longues minutes quoi regarder sur les plateformes de streaming ?
+      Ne t'en fais plus, ce site est la pour t'aider. En effe, je te propose dans ce site mes recommandations de 
+      séries sur différents sites de SVOD (site style Netflix ou OCS) ainsi qu'une review d'un film que j'ai vue récemment, 
+      que j'ai bien aimé et que je te partage. Tu trouveras également une page où tu verras les prochaines sorties sur les sites
+      de SVOD. N'hésites pas à jeter un coup d'oeil à la page mission où tu trouveras l'organisation de la mise à jour du site. 
+      Il y également une page membre, on se retrouve plus bas pour en parler. 
+    </p>
+    <p class="img1">
+      <a href="decoration/projet-max.jpg" target="_blank">
+        <img src="decoration/projet.jpg" alt="projet">
+      </a>
+    </p>
+      
+     
+  </div>
+  
+  <div class="membre">
+   
+    <p class="img2">
+      <a href="decoration/club-max.jpg" target="_blank">
+        <img src="decoration/club.jpg" alt="club">
+      </a>
+    </p>
+    <p class="membre-txt">
+      Le projet de l'espace membre est de créer un endroit où les membres pourraient donner leur avis sur un film ou une série, 
+      en recommander ou même créer un topic pour demander des idées de films ou série à regarder.
+    </p>
+  </div>
+</div>
+<footer>
+  <form action="contact.html">
+    <input
+    type="submit"
+    id="contact"
+    value="Nous contacter" 
+    />
+  </form>
+  <div class="liens-sociaux">
+    <a id="lien-facebook" href="https://www.facebook.com/fabien.tolsy.5/"                  title="facebook" target="_blank"> <span>Facebook</span></a>
+    <a id="lien-insta"    href="https://www.instagram.com/fabien_tolsy9741/?hl=fr"         title="insta"    target="_blank">  <span>Instagram</span></a>
+    <a id="lien-netflix"  href="https://www.netflix.com/fr/"                               title="netflix"  target="_blank"> <span>Netflix</span></a>
+    <a id="lien-ocs"      href="https://www.ocs.fr/"                                       title="OCS"      target="_blank"> <span>OCS</span></a>
+    <a id="lien-prime"    href="https://www.primevideo.com/?_encoding=UTF8&language=fr_FR" title="Prime Video"  target="_blank"> <span>OCS</span></a>
+  </div>
+</footer>
+</body>
+
+</html>
